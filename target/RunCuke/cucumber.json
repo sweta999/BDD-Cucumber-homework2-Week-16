@@ -1,0 +1,510 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 43441641600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Verify user navigate to registration page successfully",
+        "description": "",
+        "id": "registration-test;verify-user-navigate-to-registration-page-successfully",
+        "after": [
+          {
+            "result": {
+              "duration": 1660583800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2460416600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on nopcommerce homepage",
+            "match": {
+              "location": "RegistrationTestStepdefs.iAmOnNopcommerceHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8903509800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on Register link",
+            "match": {
+              "location": "RegistrationTestStepdefs.iClickOnRegisterLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1308160200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should navigate to Register page successfully \"\u003cverifyMessage\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003cverifyMessage\u003e",
+                  "offset": 49
+                }
+              ],
+              "location": "RegistrationTestStepdefs.iShouldNavigateToRegisterPageSuccessfully(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Sanity1"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 22005130400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Verify error message with first name empty for registration",
+        "description": "",
+        "id": "registration-test;verify-error-message-with-first-name-empty-for-registration;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1467687900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 107600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I am on homepage",
+            "match": {
+              "location": "LoginTestStepdefs.iAmOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3797915900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click on Register link",
+            "match": {
+              "location": "RegistrationTestStepdefs.iClickOnRegisterLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 704901700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I select female radio button",
+            "match": {
+              "location": "RegistrationTestStepdefs.iSelectFemaleRadioButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 448429000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I leave first name box empty \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 30
+                }
+              ],
+              "location": "RegistrationTestStepdefs.iLeaveFirstNameBoxEmpty(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 855828700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I enter last name \"sahi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sahi",
+                  "offset": 19
+                }
+              ],
+              "location": "RegistrationTestStepdefs.iEnterLastName(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 282527600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I enter email in email field \"sahi@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sahi@gmail.com",
+                  "offset": 30
+                }
+              ],
+              "location": "RegistrationTestStepdefs.iEnterEmailInEmailField(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 229722400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I enter password in password field \"sahi2000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sahi2000",
+                  "offset": 36
+                }
+              ],
+              "location": "RegistrationTestStepdefs.iEnterPasswordInPasswordField(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 171442300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I enter confirm password \"\u003cconfirmpassword\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003cconfirmpassword\u003e",
+                  "offset": 26
+                }
+              ],
+              "location": "RegistrationTestStepdefs.iEnterConfirmPassword(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 377633700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click on Register button",
+            "match": {
+              "location": "RegistrationTestStepdefs.iClickOnRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 124624600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I should see the error message First Name is required \"First name is required.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "First name is required.",
+                  "offset": 55
+                }
+              ],
+              "location": "RegistrationTestStepdefs.iShouldSeeTheErrorMessageFirstNameIsRequired(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@Smoke1"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 19340126200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 40,
+        "name": "Verify user registered successfully",
+        "description": "",
+        "id": "registration-test;verify-user-registered-successfully;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1168793900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 52100,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I am on homepage",
+            "match": {
+              "location": "LoginTestStepdefs.iAmOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4048829000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I click on Register link",
+            "match": {
+              "location": "RegistrationTestStepdefs.iClickOnRegisterLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 189674500,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I select female radio button",
+            "match": {
+              "location": "RegistrationTestStepdefs.iSelectFemaleRadioButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 723000700,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I enter first name \"suhana\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "suhana",
+                  "offset": 20
+                }
+              ],
+              "location": "RegistrationTestStepdefs.iEnterFirstName(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 166353100,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I enter last name \"sahi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sahi",
+                  "offset": 19
+                }
+              ],
+              "location": "RegistrationTestStepdefs.iEnterLastName(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1578923600,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I enter email \"sahi@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sahi@gmail.com",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginTestStepdefs.iEnterEmail(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 261532500,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I enter password \"sahi2000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sahi2000",
+                  "offset": 18
+                }
+              ],
+              "location": "LoginTestStepdefs.iEnterPassword(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 173962200,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I enter confirm password \"sahi2000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sahi2000",
+                  "offset": 26
+                }
+              ],
+              "location": "RegistrationTestStepdefs.iEnterConfirmPassword(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13943709200,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I click on Register button",
+            "match": {
+              "location": "RegistrationTestStepdefs.iClickOnRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 138575100,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I should Register successfully \"\u003cregistermessage\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003cregistermessage\u003e",
+                  "offset": 32
+                }
+              ],
+              "location": "RegistrationTestStepdefs.iShouldRegisterSuccessfully(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 26,
+            "name": "@Regression2"
+          }
+        ]
+      }
+    ],
+    "name": "Registration Test",
+    "description": "As a user I want to register into nopcommerce website",
+    "id": "registration-test",
+    "keyword": "Feature",
+    "uri": "src/test/java/resources/featurefile/RegistrationTest.feature"
+  }
+]
